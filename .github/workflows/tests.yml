@@ -11,6 +11,8 @@ permissions:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  APP_ENV: local
+  APP_DEBUG: true
 
 jobs:
   tests:
