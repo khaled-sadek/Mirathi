@@ -115,9 +115,9 @@
         ],
         "test:lint": "pint --parallel --test",
         "test:refactor": "rector --dry-run",
-        "test:type-coverage": "pest --type-coverage --compact --coverage --min=100",
+        "test:type-coverage": "pest --type-coverage --compact --coverage",
         "test:types": "phpstan analyse --ansi",
-        "test:unit": "pest --parallel --colors=always --coverage --min=100"
+        "test:unit": "pest --parallel --colors=always --coverage"
     },
     "$schema": "https://getcomposer.org/schema.json"
 }

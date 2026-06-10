@@ -7,6 +7,7 @@ use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Override;
 
 final class User extends Authenticatable
 {
@@ -18,6 +19,7 @@ final class User extends Authenticatable
      *
      * @var list<string>
      */
+    #[Override]
     protected $fillable = [
         'name',
         'email',
@@ -29,6 +31,7 @@ final class User extends Authenticatable
      *
      * @var list<string>
      */
+    #[Override]
     protected $hidden = [
         'password',
         'remember_token',
@@ -39,6 +42,7 @@ final class User extends Authenticatable
      *
      * @return array<string, string>
      */
+    #[Override]
     protected function casts(): array
     {
         return [
